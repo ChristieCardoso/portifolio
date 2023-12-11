@@ -37,45 +37,19 @@ const data = [
       repo: 'https://github.com/ChristieCardoso/nlw-spacetime-front',
     },
   },
-  // {
-  //   id: '4',
-  //   title: 'Apiko Marketplace',
-  //   description:
-  //     'An online marketplace made with React. The project was developed on 8th Apiko Intensive.',
-  //   image: {
-  //     src: 'https://res.cloudinary.com/dx6tl6aa2/image/upload/v1628348072/portfolio/projects/react-marketplace/apiko-marketplace-lg_xppe9n.jpg',
-  //   },
-  //   links: {
-  //     site: 'https://apiko-marketplace-app-snaichuk.herokuapp.com/',
-  //     repo: 'https://github.com/vsnaichuk/apiko-marketplace-app-snaichuk',
-  //   },
-  // },
-  // {
-  //   id: '5',
-  //   title: 'Places App',
-  //   description:
-  //     'A MERN app to let users share their experience of places along with Details. It is user friendly and can be useful to many others.',
-  //   image: {
-  //     src: 'https://res.cloudinary.com/dx6tl6aa2/image/upload/v1628348070/portfolio/projects/mern-places/mern-places-lg_xf6zom.jpg',
-  //   },
-  //   links: {
-  //     site: 'https://yourplaces-sv.netlify.app/',
-  //     repo: 'https://github.com/vsnaichuk/MERN-places',
-  //   },
-  // },
-  // {
-  //   id: '6',
-  //   title: 'eCommerce Mobile App',
-  //   description:
-  //     'A Mobile eCommerce application built with React Native that includes cart functionality, push notifications, user authentication and user orders',
-  //   image: {
-  //     src: 'https://res.cloudinary.com/dx6tl6aa2/image/upload/v1628348073/portfolio/projects/rn-shop/rn-shop-lg_fofglf.jpg',
-  //   },
-  //   links: {
-  //     site: 'https://expo.dev/@v_snaichuk/online-shop-app',
-  //     repo: 'https://github.com/vsnaichuk/RN-shop',
-  //   },
-  // },
+  {
+    id: '4',
+    title: 'Movie - Lib',
+    description:
+      'Projeto com React, consumindo a API do TMDB (filmes), utilizando hooks e React Router, criado com Vite.',
+    image: {
+      src: 'https://res.cloudinary.com/dmvm1mlgv/image/upload/f_auto,q_auto/v1/Portifolio%20React/qjlvgca7fmjclcwtqj6z',
+    },
+    links: {
+      site: 'https://movie-lib-omega.vercel.app/',
+      repo: 'https://github.com/ChristieCardoso/movie-lib',
+    },
+  },
 ];
 
 export default data;
