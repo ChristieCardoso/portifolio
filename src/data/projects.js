@@ -50,6 +50,19 @@ const data = [
       repo: 'https://github.com/ChristieCardoso/movie-lib',
     },
   },
+  {
+    id: '5',
+    title: 'Bem Jequi',
+    description:
+      'Projeto de landing page, relacionado ao meu negócio de laticínios, feita com react, react-router-dom, Sass',
+    image: {
+      src: 'https://res.cloudinary.com/dmvm1mlgv/image/upload/f_auto,q_auto/v1/Portifolio%20React/mzoub2vfvfkmc0nviaoy',
+    },
+    links: {
+      site: 'https://bemjequiv2.netlify.app/',
+      repo: 'https://github.com/ChristieCardoso/bemjequi-v2',
+    },
+  },
 ];
 
 export default data;

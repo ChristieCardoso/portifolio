@@ -32,7 +32,7 @@ export const AboutText = () => {
           <CgGym className="aboutIcon" /> Academia
         </li>
         <li>
-          <GiSoccerBall className="aboutIcon" /> Fotebol
+          <GiSoccerBall className="aboutIcon" /> Futebol
         </li>
 
       </ul>
