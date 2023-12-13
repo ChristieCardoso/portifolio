@@ -60,7 +60,7 @@ export const BottonCurriculo = () => {
     <div className="ButtonContainer">
       <h3 className="ButtonTitle">Currículo</h3>
       <button type="button" data-dl onClick={handleDownload}>
-        <span class="dl-icon"></span><span>Download</span>
+        <span className="dl-icon"></span><span>Download</span>
       </button>
     </div>
   )

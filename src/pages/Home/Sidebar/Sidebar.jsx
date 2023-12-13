@@ -1,13 +1,22 @@
+import { motion } from 'framer-motion';
 import { AiOutlineWhatsApp, AiOutlineMail, AiFillEnvironment } from "react-icons/ai";
+import { BottonCurriculo } from "../../../components/Botton/BottonCurriculo";
 import Avatar from "../../../img/chs.png";
 
 import "./Sidebar.scss";
-import { BottonCurriculo } from "../../../components/Botton/BottonCurriculo";
 
 export const Sidebar = () => {
   return (
     <aside className="SidebarContainer">
-      <img src={Avatar} alt="Chs" />
+      <motion.img src={Avatar} alt="Chs" initial={{ scale: 0 }}
+        animate={{ rotate: 360, scale: 1 }}
+        transition={{
+          type: "spring",
+          mass: 4.5,
+          stiffness: 260,
+          damping: 20
+
+        }} />
       <p className="SidebarTitle">Desenvolvedor Web</p>
       <section className="SidebarInfoContainer">
         <div className="SidebarInfoCard">
@@ -32,7 +41,7 @@ export const Sidebar = () => {
           </div>
         </div>
       </section>
-        <BottonCurriculo />
+      <BottonCurriculo />
     </aside>
   );
 };

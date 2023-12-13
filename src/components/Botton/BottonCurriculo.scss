@@ -6,7 +6,6 @@
   --arrowB: polygon(0% 37.5%,100% 37.5%,100% 62.5%,100% 62.5%,50% 62.5%,0% 62.5%,0% 62.5%);
 }
 
-
 .ButtonContainer {
   display: flex;
   flex-direction: column;
@@ -16,8 +15,6 @@
     color: $text-color;
   }
 }
-
-
 
 button {
   background: $gradient;

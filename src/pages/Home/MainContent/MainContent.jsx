@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import {
   DiHtml5,
@@ -20,23 +21,45 @@ const technologies = [
 ];
 
 
+const container = {
+  hidden: { opacity: 1, scale: 0 },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      delayChildren: 1.6,
+      staggerChildren: 0.2
+    }
+  }
+};
+
+const item = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1
+  }
+};
+
 export const MainContent = () => {
   return (
     <main className="MainContainer">
-      <div className="MainTechnologies">
+      <motion.div className="MainTechnologies" variants={container}
+        initial="hidden"
+        animate="visible">
         <h2 className="MainContentTitle">Conhecimentos</h2>
-        <div className="MainContainerCard">
+        <div className="MainContainerCard" >
           {technologies.map((tech) => (
-            <div className="MainCard" id={tech.id} key={tech.id}>
+            <motion.div className="MainCard" variants={item} id={tech.id} key={tech.id}>
               {tech.icon}
               <div className="MainCardInfo">
                 <h3 className="MainCardInfoTitle">{tech.name}</h3>
                 <p className="MainCardInfoAge">{tech.age}</p>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
-      </div>
+      </motion.div>
       <div className="HomeContainerBtn">
         <Link to="/about" className="HomeBtn">
           Veja Mais
