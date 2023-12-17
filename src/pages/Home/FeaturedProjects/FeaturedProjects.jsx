@@ -1,6 +1,6 @@
+import { Link } from 'react-router-dom';
 import Project from '../../../data/projects'
 import ProjectCard from './ProjectCard/ProjectCard';
-import { Link } from 'react-router-dom';
 
 import './FeaturedProjects.scss';
 
