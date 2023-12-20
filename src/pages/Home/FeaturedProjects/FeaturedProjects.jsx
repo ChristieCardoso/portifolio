@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+
 import Project from '../../../data/projects';
 import ProjectCard from './ProjectCard/ProjectCard';
 
@@ -35,15 +37,23 @@ export const FeaturedProjects = () => {
         <button onClick={() => handleFilterChange('api')}>Api</button>
       </div>
 
-      <section className='FeaturedProject'>
+      <motion.section
+        className='FeaturedProject'
+      >
         {featuredProjects.map((project) => (
-          <ProjectCard key={project.id} {...project} />
+          <motion.div
+            key={project.id}
+            whileHover={{ rotate: 3 }} // Animação ao passar o mouse por cima
+          >
+            <ProjectCard {...project} />
+          </motion.div>
         ))}
-      </section>
+      </motion.section>
       <Link to="/project" className="HomeBtn">
         Veja Mais
       </Link>
     </div>
   );
 };
+
 
