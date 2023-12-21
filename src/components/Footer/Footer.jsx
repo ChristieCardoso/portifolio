@@ -37,7 +37,7 @@ export const Footer = () => {
             <div class="tooltip">
               Instagram
             </div>
-            <span><i class="fab fa-instagram"></i></span>
+            <span><i class="fab fa-instagram"></i>FaInstagram</span>
           </div>
           <div class="icon github">
             <div class="tooltip">
