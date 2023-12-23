@@ -30,7 +30,7 @@ export const FeaturedProjects = () => {
         Projetos em Destaque
       </h1>
 
-      <div>
+      <div className='btnFilter'>
         <button onClick={() => handleFilterChange('all')}>Destaques</button>
         <button onClick={() => handleFilterChange('landing-page')}>LandingPage</button>
         <button onClick={() => handleFilterChange('estudo')}>Estudos</button>
@@ -42,6 +42,7 @@ export const FeaturedProjects = () => {
       >
         {featuredProjects.map((project) => (
           <motion.div
+            className='test'
             key={project.id}
             whileHover={{ rotate: 3 }} // Animação ao passar o mouse por cima
           >
