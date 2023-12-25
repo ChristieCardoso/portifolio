@@ -15,7 +15,7 @@
   padding: 1.25rem;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: column;
+  width: 300px;
   line-height: 1.5;
   border: none;
   border-radius: 0.5rem;
@@ -33,6 +33,7 @@
   align-items: center;
   flex-direction: column;
   padding: 1rem;
+  width: 100%;
 
   .FeaturedProjectCardTitle {
     margin-bottom: 0.75rem;
@@ -45,15 +46,6 @@
     margin-bottom: 2rem;
     color: $text-color-secondary;
     font-style: italic;
-    font-size: 20px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 320px;
-
-    .FeaturedProjectDescription::before {
-      content: "... ";
-    }
   }
 
   .FeaturedProjectBtnContainer {
@@ -68,15 +60,16 @@
 }
 
 @media (max-width: 800px) {
-  .FeaturedProjectCardBody {
-    padding: 2rem;
-    width: 300px;
-  }
   .FeaturedProjectCardTitle {
     font-size: 1.7rem;
   }
 
   .FeaturedProjectDescription {
     font-size: 1.3rem;
+    font-style: italic;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
   }
 }

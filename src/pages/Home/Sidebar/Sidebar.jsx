@@ -37,7 +37,7 @@ export const Sidebar = () => {
           <AiFillEnvironment id="pin-icon" />
           <div>
             <h3>Localização</h3>
-            <p>Contagem / MG</p>
+            <p>Belo Horizonte / MG</p>
           </div>
         </div>
       </section>
