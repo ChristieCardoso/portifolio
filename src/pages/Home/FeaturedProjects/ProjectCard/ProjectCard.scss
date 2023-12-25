@@ -10,7 +10,6 @@
 }
 
 .FeaturedProjectCard {
-  border: 2px solid red;
   display: flex;
   height: 100%;
   padding: 1.25rem;
@@ -30,7 +29,6 @@
 }
 
 .FeaturedProjectCardBody {
-  border: 4px solid blue;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -48,15 +46,6 @@
     margin-bottom: 2rem;
     color: $text-color-secondary;
     font-style: italic;
-    font-size: 20px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    width: 100%;
-
-    .FeaturedProjectDescription::before {
-      content: "... ";
-    }
   }
 
   .FeaturedProjectBtnContainer {
@@ -71,15 +60,16 @@
 }
 
 @media (max-width: 800px) {
-  .FeaturedProjectCardBody {
-    padding: 2rem;
-    width: 300px;
-  }
   .FeaturedProjectCardTitle {
     font-size: 1.7rem;
   }
 
   .FeaturedProjectDescription {
     font-size: 1.3rem;
+    font-style: italic;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
   }
 }

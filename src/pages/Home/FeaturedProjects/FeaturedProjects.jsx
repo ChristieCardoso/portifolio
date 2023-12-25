@@ -42,7 +42,6 @@ export const FeaturedProjects = () => {
       >
         {featuredProjects.map((project) => (
           <motion.div
-            className='test'
             key={project.id}
             whileHover={{ rotate: 3 }} // Animação ao passar o mouse por cima
           >
