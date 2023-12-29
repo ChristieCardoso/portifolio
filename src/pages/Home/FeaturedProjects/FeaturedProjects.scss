@@ -15,6 +15,10 @@
   flex-wrap: wrap;
   gap: 1rem;
   margin-top: 1rem;
+  button {
+    color: red;
+    @include btn-filter;
+  }
 }
 
 .FeaturedProject {
