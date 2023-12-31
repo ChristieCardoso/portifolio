@@ -25,17 +25,6 @@
   }
 }
 
-@mixin btn-filter {
-  padding: 1.2rem 1.5rem;
-  border-radius: 2rem;
-  border: none;
-  box-shadow: 0 2px 5px 3px rgba(119, 53, 136, 0.459);
-  &:hover {
-    transform: scale(1.02);
-    box-shadow: 0 2px 4px 5px rgba(129, 72, 144, 0.561);
-  }
-}
-
 @mixin gradient-border {
   content: "";
   background: $gradient;

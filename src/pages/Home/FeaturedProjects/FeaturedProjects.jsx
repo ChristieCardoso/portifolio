@@ -31,10 +31,10 @@ export const FeaturedProjects = () => {
       </h1>
 
       <div className='btnFilter'>
-        <button onClick={() => handleFilterChange('all')}>Destaques</button>
-        <button onClick={() => handleFilterChange('landing-page')}>LandingPage</button>
-        <button onClick={() => handleFilterChange('estudo')}>Estudos</button>
-        <button onClick={() => handleFilterChange('api')}>Api</button>
+        <a onClick={() => handleFilterChange('all')}>Destaques</a>
+        <a onClick={() => handleFilterChange('landing-page')}>LandingPage</a>
+        <a onClick={() => handleFilterChange('estudo')}>Estudos</a>
+        <a onClick={() => handleFilterChange('api')}>Api</a>
       </div>
 
       <motion.section
