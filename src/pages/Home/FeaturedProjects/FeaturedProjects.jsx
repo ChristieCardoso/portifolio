@@ -11,17 +11,28 @@ export const FeaturedProjects = () => {
   const [allProjects, setAllProjects] = useState([]); // Estado para armazenar todos os projetos
   const [featuredProjects, setFeaturedProjects] = useState([]);
   const [filter, setFilter] = useState('all'); // Estado para armazenar o filtro selecionado
+  const [searchQuery, setSearchQuery] = useState(''); // Estado para armazenar a consulta de pesquisa
 
   useEffect(() => {
     // Carregar todos os projetos ao inicializar o componente
     setAllProjects(Project);
-    // Atualize os projetos em destaque sempre que o filtro for alterado
-    const filteredProjects = allProjects.filter((project) => filter === 'all' || project.category === filter);
+    // Atualize os projetos em destaque sempre que o filtro ou a consulta de pesquisa for alterado
+    const filteredProjects = allProjects.filter(
+      (project) =>
+        (filter === 'all' || project.category === filter) &&
+        (searchQuery === '' ||
+          (project.technology && project.technology.toLowerCase().includes(searchQuery.toLowerCase()))
+        )
+    );
     setFeaturedProjects(filteredProjects);
-  }, [filter, allProjects]);
+  }, [filter, allProjects, searchQuery]);
 
   const handleFilterChange = (selectedFilter) => {
     setFilter(selectedFilter);
+  };
+
+  const handleSearchChange = (event) => {
+    setSearchQuery(event.target.value);
   };
 
   return (
@@ -29,22 +40,26 @@ export const FeaturedProjects = () => {
       <h1 className='FeaturedProjectTitle'>
         Projetos em Destaque
       </h1>
+      <div className='searchContainer'>
+        <input
+          type="text"
+          placeholder="Pesquisar por tecnologia"
+          value={searchQuery}
+          onChange={handleSearchChange}
+          className='search'
+        />
 
-      <div className='btnFilter'>
-        <a onClick={() => handleFilterChange('all')}>Destaques</a>
-        <a onClick={() => handleFilterChange('landing-page')}>LandingPage</a>
-        <a onClick={() => handleFilterChange('estudo')}>Estudos</a>
-        <a onClick={() => handleFilterChange('api')}>Api</a>
+        <div className='btnFilter'>
+          <a onClick={() => handleFilterChange('all')}>Destaques</a>
+          <a onClick={() => handleFilterChange('landing-page')}>LandingPage</a>
+          <a onClick={() => handleFilterChange('estudo')}>Estudos</a>
+          <a onClick={() => handleFilterChange('api')}>Api</a>
+        </div>
       </div>
 
-      <motion.section
-        className='FeaturedProject'
-      >
+      <motion.section className='FeaturedProject'>
         {featuredProjects.map((project) => (
-          <motion.div
-            key={project.id}
-            whileHover={{ rotate: 3 }} // Animação ao passar o mouse por cima
-          >
+          <motion.div key={project.id} whileHover={{ rotate: 3 }}>
             <ProjectCard {...project} />
           </motion.div>
         ))}
@@ -55,5 +70,3 @@ export const FeaturedProjects = () => {
     </div>
   );
 };
-
-

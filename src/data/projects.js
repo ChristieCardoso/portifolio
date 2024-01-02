@@ -3,6 +3,7 @@ const data = [
     id: '1',
     title: 'Estofados 10/10',
     category: 'landing-page',
+    technology: 'nextjs, tailwind',
     description:
       'Landing Page desenvolvida com Next.js, Tailwind CSS e ESLint oferece uma interface amigável e responsiva, permitindo que os usuários solicitem e agendem serviços de limpeza de estofados de forma conveniente.',
     image: {
@@ -17,6 +18,7 @@ const data = [
     id: '2',
     title: 'Minas na mesa',
     category: 'landing-page',
+    technology: 'react, css',
     description:
       'Landing Page de evento gastronômico desenvolvido com React e CSS, A interface foi projetada para ser fácil e acessível, permitindo que os usuários naveguem pelas informações do festival com facilidade.',
     image: {
@@ -31,6 +33,7 @@ const data = [
     id: '3',
     title: 'Nlw - SpaceTime',
     category: 'estudo',
+    technology: 'nextjs, tailwind, typescript, axios',
     description:
       'Projeto do evento NLW da Rocketseat permite upload de imagens com data e descrição, além de sistema de login integrado ao GitHub com Next.js, TypeScript, Axios, Tailwind CSS, JWT, Js-cookie e ESLint.',
     image: {
@@ -44,6 +47,7 @@ const data = [
     id: '4',
     title: 'Movie - Lib',
     category: 'api',
+    technology: 'react, css',
     description:
       'Projeto com React, consumindo a API do TMDB (filmes), utilizando hooks e React Router, criado com Vite.',
     image: {
@@ -58,6 +62,7 @@ const data = [
     id: '5',
     title: 'Bem Jequi',
     category: 'landing-page',
+    technology: 'react, sass',
     description:
       'Projeto de landing page, relacionado ao meu negócio de laticínios, feita com react, react-router-dom, Sass',
     image: {
