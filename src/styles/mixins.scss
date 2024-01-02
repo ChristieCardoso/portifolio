@@ -25,6 +25,19 @@
   }
 }
 
+@mixin btn-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1.2rem 1.5rem;
+  border-radius: 2rem;
+  border: none;
+  margin-top: 1rem;
+  button {
+    color: red;
+  }
+}
+
 @mixin gradient-border {
   content: "";
   background: $gradient;

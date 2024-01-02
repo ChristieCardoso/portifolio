@@ -5,24 +5,24 @@ import './Footer.scss';
 export const Footer = () => {
   return (
     <section className='footerContainer'>
-      <div class="wrapper">
-        <div class="icon linkedin">
-          <div class="tooltip">
+      <div className="wrapper">
+        <div className="icon linkedin">
+          <div className="tooltip">
             Linkedin
           </div>
-          <span><i class="fab fa-linkedin"><FaLinkedin /></i></span>
+          <span><i className="fab fa-linkedin"><FaLinkedin /></i></span>
         </div>
-        <div class="icon instagram">
-          <div class="tooltip">
+        <div className="icon instagram">
+          <div className="tooltip">
             Instagram
           </div>
-          <span><i class="fab fa-instagram"><FaInstagram /></i></span>
+          <span><i className="fab fa-instagram"><FaInstagram /></i></span>
         </div>
-        <div class="icon github">
-          <div class="tooltip">
+        <div className="icon github">
+          <div className="tooltip">
             Github
           </div>
-          <span><i class="fab fa-github"><FaGithub /></i></span>
+          <span><i className="fab fa-github"><FaGithub /></i></span>
         </div>
       </div>
       <p>© 2023 Todos os direitos reservados</p>

@@ -9,12 +9,31 @@
   position: relative;
   padding: 3rem 0;
 }
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  .search {   
+    border-radius: 0.5rem;
+    border: 0px solid grey;
+    padding: 0.5rem 1rem;    
+  }
+}
 
 .btnFilter {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-top: 1rem;
+  a {
+    color: $text-color-secondary;
+    box-shadow: 0 2px 5px 3px rgba(119, 53, 136, 0.459);
+    padding: 0.8rem 1.2rem;
+    border-radius: 1rem;
+    cursor: pointer;
+  }
 }
 
 .FeaturedProject {
