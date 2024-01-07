@@ -23,7 +23,7 @@ export const Sidebar = () => {
           <AiOutlineWhatsApp id="whatsapp-icon" />
           <div>
             <h3>Telefone</h3>
-            <p>(31)99999-9999</p>
+            <p>(31)9999-999</p>
           </div>
         </div>
         <div className="SidebarInfoCard">
