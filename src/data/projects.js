@@ -73,6 +73,21 @@ const data = [
       repo: 'https://github.com/ChristieCardoso/bemjequi-v2',
     },
   },
+  {
+    id: '6',
+    title: 'Lottery',
+    category: 'dapp',
+    technology: 'nextjs, tailwindcss',
+    description:
+      'Projeto de loteria descentralizada usando Next.js, Tailwind CSS e Solidity.',
+    image: {
+      src: 'https://res.cloudinary.com/dmvm1mlgv/image/upload/f_auto,q_auto/v1/Portifolio%20React/joisub0dtcrdzmaylaam',
+    },
+    links: {
+      site: 'https://lottery-dapp-v3.vercel.app/',
+      repo: 'https://github.com/ChristieCardoso/lottery-dapp-v3',
+    },
+  },
 ];
 
 export default data;

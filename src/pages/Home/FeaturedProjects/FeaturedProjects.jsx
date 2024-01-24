@@ -14,9 +14,7 @@ export const FeaturedProjects = () => {
   const [searchQuery, setSearchQuery] = useState(''); // Estado para armazenar a consulta de pesquisa
 
   useEffect(() => {
-    // Carregar todos os projetos ao inicializar o componente
     setAllProjects(Project);
-    // Atualize os projetos em destaque sempre que o filtro ou a consulta de pesquisa for alterado
     const filteredProjects = allProjects.filter(
       (project) =>
         (filter === 'all' || project.category === filter) &&
@@ -54,6 +52,7 @@ export const FeaturedProjects = () => {
           <a onClick={() => handleFilterChange('landing-page')}>LandingPage</a>
           <a onClick={() => handleFilterChange('estudo')}>Estudos</a>
           <a onClick={() => handleFilterChange('api')}>Api</a>
+          <a onClick={() => handleFilterChange('dapp')}>Dapp</a>
         </div>
       </div>
 
