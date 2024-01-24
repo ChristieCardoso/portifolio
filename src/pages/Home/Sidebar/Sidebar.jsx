@@ -30,7 +30,7 @@ export const Sidebar = () => {
           <AiOutlineMail id="email-icon" />
           <div>
             <h3>E-mail</h3>
-            <p>christiecardoso@hotmail.com</p>
+            <p>christie.96@hotmail.com</p>
           </div>
         </div>
         <div className="SidebarInfoCard">

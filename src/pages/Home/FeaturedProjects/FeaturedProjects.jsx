@@ -52,6 +52,7 @@ export const FeaturedProjects = () => {
           <a onClick={() => handleFilterChange('landing-page')}>LandingPage</a>
           <a onClick={() => handleFilterChange('estudo')}>Estudos</a>
           <a onClick={() => handleFilterChange('api')}>Api</a>
+          <a onClick={() => handleFilterChange('dapp')}>Dapp</a>
         </div>
       </div>
 
