@@ -23,7 +23,7 @@ export const BottonCurriculo = () => {
       <button className="face-button" type="button" data-dl onClick={handleDownload}>
         <span className="face-primary">
           <FaCloudDownloadAlt />
-          Download
+          Currículo
         </span>
         <span className="face-secondary">
           <FaHdd />

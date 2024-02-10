@@ -8,9 +8,10 @@
   font-weight: 500;
   text-align: center;
   text-decoration: none;
-  color: $btn-color;
+  background: $gradient-btn;
   overflow: hidden;
   cursor: pointer;
+  color: $color-white;
 }
 
 .face-primary,
@@ -24,8 +25,8 @@
 .face-primary {
   padding: 0 32px;
   line-height: 40px;
-  background-color: $btn-color;
-  color: #fff;
+  background: $gradient-btn;
+  color: $color-white;
   transition: margin 0.4s;
 }
 

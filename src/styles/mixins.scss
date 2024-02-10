@@ -9,7 +9,7 @@
 @mixin btn {
   padding: 1rem 1.2rem;
   color: $text-color;
-  background: $gradient;
+  background: $gradient-btn;
   text-decoration: none;
   border-radius: 3rem;
 }
@@ -40,7 +40,7 @@
 
 @mixin gradient-border {
   content: "";
-  background: $gradient;
+  background: $gradient-btn;
   height: 3px;
   width: 20%;
 }
