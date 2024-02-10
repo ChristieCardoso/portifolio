@@ -4,77 +4,35 @@
 .WorkExperienceContainer {
   background-color: $bg-color;
   border-radius: $container-border-radius;
-  display: flex;
+  flex-direction: column;
   width: 100%;
-  justify-content: space-around;
   text-align: center;
-  padding: 1rem;
-  flex-wrap: wrap;
+  padding: 2rem;
+
+  p {
+    font-size: 1.1rem;
+    font-style: italic;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
 }
 
 .ProfessionalExperienceTitle {
   color: $text-color;
   font-size: 2.2rem;
-  margin-bottom: 1.3rem;
+  margin: 1.3rem 0 2rem 3rem;
+  gap: 2rem;
   @include center;
-  
 
   &:after {
     @include gradient-border;
   }
 }
 
-.WorkExperienceBody {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 3rem 0;
-  gap: 1rem;
-  
+.vertical-timeline-element-title {
+  font-size: 1.5rem;
 }
 
-.WorkExperienceCard{
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.6rem;
+.vertical-timeline-element-subtitle {
+  font-size: 16px;
+  padding-top: 1rem;
 }
-
-.WorkExperienceTitle {
-  color: $text-color;
-  padding: 0.5rem;
-  font-size: 1.4rem;
-}
-
-.WorkExperienceAge {
-  color: $text-color-secondary;
-  font-style: italic;
-  font-size: 0.8rem;
-}
-
-.WorkExperienceText {
-  color: $text-color;
-  font-style: italic;
-  font-size: 1.05rem;
-}
-
-.WorkExperienceCompe{
-  color: $text-color-secondary;
-  font-weight: 700;  
-}
-
-.WorkExperienceTech{
-  color: $text-color;
-  font-style: italic;
-  font-size: 1.05rem;
-}
-
-
-
-@media (max-width: 800px) {
-  .ProfessionalExperienceTitle {    
-     width: 300px;
-   }
- }
- 
