@@ -1,4 +1,4 @@
-import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import './Footer.scss';
 
@@ -10,19 +10,13 @@ export const Footer = () => {
           <div className="tooltip">
             Linkedin
           </div>
-          <span><i className="fab fa-linkedin"><FaLinkedin /></i></span>
-        </div>
-        <div className="icon instagram">
-          <div className="tooltip">
-            Instagram
-          </div>
-          <span><i className="fab fa-instagram"><FaInstagram /></i></span>
-        </div>
+          <span><a href={"https://www.linkedin.com/in/christie-cardoso"} className="fab fa-linkedin"><FaLinkedin /></a></span>
+        </div>     
         <div className="icon github">
           <div className="tooltip">
             Github
           </div>
-          <span><i className="fab fa-github"><FaGithub /></i></span>
+          <span><a href={"https://github.com/ChristieCardoso"} target="_blank" className="fab fa-github"><FaGithub /></a></span>
         </div>
       </div>
       <p>© 2023 Todos os direitos reservados</p>

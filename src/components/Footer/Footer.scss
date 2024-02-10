@@ -12,6 +12,8 @@
   }
 }
 
+/* Icons */
+
 .wrapper {
   display: inline-flex;
   gap: 10px;
@@ -39,9 +41,10 @@
   box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.8);
   transition: 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
-.wrapper .icon span i {
+.wrapper .icon span a {
   line-height: 48px;
   font-size: 25px;
+  color: $bg-color;
 }
 .wrapper .icon .tooltip {
   position: absolute;
@@ -86,11 +89,6 @@
 .wrapper .linkedin:hover .tooltip,
 .wrapper .linkedin:hover .tooltip:before {
   background: #46c1f6;
-}
-.wrapper .instagram:hover span,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip:before {
-  background: #e1306c;
 }
 .wrapper .github:hover span,
 .wrapper .github:hover .tooltip,
