@@ -10,13 +10,13 @@
   flex-direction: column;
   text-align: center;
   position: relative;
-  padding: 3rem 0;
+  padding: 3rem;
 
   img {
     max-width: 70%;
     border-radius: $container-border-radius;
     position: absolute;
-    top: -3rem;
+    top: -4rem;
   }
 
   .SidebarTitle {
@@ -25,7 +25,7 @@
     border-radius: $card-border-radius;
     margin-top: 9rem;
     margin-bottom: 2rem;
-    padding: 0.8rem 1.2rem;
+    padding: 0.8rem 1rem;
   }
 
   .SidebarBtn {
@@ -40,7 +40,6 @@
   padding: 1rem;
   margin-bottom: 2rem;
   text-align: left;
-  width: 80%;
   border-radius: $card-border-radius;
 
   .SidebarInfoCard {
@@ -71,12 +70,18 @@
       border-radius: $card-border-radius;
     }
 
-    #whatsapp-icon {
-      color: #3be984;
+    a {
+      color: $color-white;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    #in-icon {
+      color: #46c1f6;
     }
 
     #pin-icon {
-      color: #6ab5b9;
+      color: #637568;
     }
 
     #email-icon {

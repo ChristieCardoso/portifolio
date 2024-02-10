@@ -10,7 +10,6 @@ export const About = () => {
     <section className='aboutContainer'>
       <div className='about'>
         <div className='aboutTextContainer'>
-          <h1 className='aboutTitle'>Deixe-me <b>apresentar</b></h1>
           <AboutText />
         </div>
 

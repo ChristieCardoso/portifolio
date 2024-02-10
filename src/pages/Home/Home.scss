@@ -21,3 +21,7 @@
   display: flex;
   margin-top: 5rem;
 }
+
+.btn-expand {
+  @include btn;
+}

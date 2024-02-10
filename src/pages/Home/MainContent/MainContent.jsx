@@ -61,7 +61,7 @@ export const MainContent = () => {
         </div>
       </motion.div>
       <div className="HomeContainerBtn">
-        <Link to="/about" className="HomeBtn">
+        <Link to="/about" className="btn-expand">
           Veja Mais
         </Link>
       </div>

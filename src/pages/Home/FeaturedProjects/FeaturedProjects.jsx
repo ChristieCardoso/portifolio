@@ -63,7 +63,7 @@ export const FeaturedProjects = () => {
           </motion.div>
         ))}
       </motion.section>
-      <Link to="/project" className="HomeBtn">
+      <Link to="/project" className="btn-expand">
         Veja Mais
       </Link>
     </div>
