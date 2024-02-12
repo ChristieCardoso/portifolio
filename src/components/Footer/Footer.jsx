@@ -4,14 +4,14 @@ import './Footer.scss';
 
 export const Footer = () => {
   return (
-    <section className='footerContainer'>
+    <footer className='footerContainer'>
       <div className="wrapper">
         <div className="icon linkedin">
           <div className="tooltip">
             Linkedin
           </div>
           <span><a href={"https://www.linkedin.com/in/christie-cardoso"} className="fab fa-linkedin"><FaLinkedin /></a></span>
-        </div>     
+        </div>
         <div className="icon github">
           <div className="tooltip">
             Github
@@ -20,7 +20,7 @@ export const Footer = () => {
         </div>
       </div>
       <p>© 2023 Todos os direitos reservados</p>
-    </section>
+    </footer>
   );
 };
 

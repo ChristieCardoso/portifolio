@@ -1,25 +1,8 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import {
-  DiHtml5,
-  DiCss3,
-  DiJsBadge,
-  DiNodejsSmall,
-  DiMysql,
-  DiReact,
-} from "react-icons/di";
+import { front, tools, back_db_cloud, language } from "../../../data/skills";
 
 import "./MainContent.scss";
-
-const technologies = [
-  { id: "html", name: "HTML5", age: "3 Anos", icon: <DiHtml5 /> },
-  { id: "css", name: "CSS3", age: "3 Anos", icon: <DiCss3 /> },
-  { id: "js", name: "JavaScript", age: "3 Anos", icon: <DiJsBadge /> },
-  { id: "node", name: "Node.js", age: "1 Ano", icon: <DiNodejsSmall /> },
-  { id: "mysql", name: "MySQL", age: "1 Ano", icon: <DiMysql /> },
-  { id: "react", name: "React", age: "1 Ano", icon: <DiReact /> },
-];
-
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -42,24 +25,26 @@ const item = {
 };
 
 export const MainContent = () => {
+  const sections = [
+    { title: "Language", items: language },
+    { title: "Front-End", items: front },
+    { title: "Back-End, Database and Cloud", items: back_db_cloud },
+    { title: "Tools", items: tools },
+  ];
   return (
     <main className="MainContainer">
-      <motion.div className="MainTechnologies" variants={container}
-        initial="hidden"
-        animate="visible">
-        <h2 className="MainContentTitle">Conhecimentos</h2>
-        <div className="MainContainerCard" >
-          {technologies.map((tech) => (
-            <motion.div className="MainCard" variants={item} id={tech.id} key={tech.id}>
-              {tech.icon}
-              <div className="MainCardInfo">
-                <h3 className="MainCardInfoTitle">{tech.name}</h3>
-                <p className="MainCardInfoAge">{tech.age}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-      </motion.div>
+      {sections.map(({ title, items }) => (
+        <motion.div variants={container} initial="hidden" animate="visible" key={title}>
+          <h2 className="MainContentTitle">{title}</h2>
+          <div className="MainContainerCard">
+            {items.map(({ id, icon }) => (
+              <motion.div className="MainCard" variants={item} id={id} key={id}>
+                {icon}
+              </motion.div>
+            ))}
+          </div>
+        </motion.div>
+      ))}
       <div className="HomeContainerBtn">
         <Link to="/about" className="btn-expand">
           Veja Mais

@@ -1,99 +1,34 @@
 @import "../../../styles/variables.scss";
-@import "../../../styles/mixins";
 
 .MainContainer {
   flex: 2 1 0;
-  padding: 3rem;
+  padding: 1rem;
   background-color: $bg-color;
   border-radius: $container-border-radius;
 }
 
-.MainTechnologies {
-  margin-bottom: 1rem;
+.MainContentTitle {
+  display: flex;
+  justify-content: center;
+  color: $text-color;
+  font-size: 1.2rem;
+  margin: 1rem;
+}
 
-  h2 {
-    color: $text-color;
-    font-size: 2.2rem;
-    margin-bottom: 1.3rem;
-    @include center;
-    justify-content: center;
-    gap: 1rem;
+.MainContainerCard {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: center;
+  gap: 3rem;
 
-    &:after {
-      @include gradient-border;
-    }
-  }
-
-  .MainContainerCard {
+  .MainCard {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
-    padding: 1rem;
+    align-items: center;
 
-    .MainCard {
-      @include center;
-      gap: 1rem;
-      padding: 1rem;
-      border: 1px solid #333;
-      width: 35%;
-      border-radius: $card-border-radius;
-
-      svg {
-        font-size: 4rem;
-      }
-
-      .MainCardInfo {
-        display: flex;
-        flex-direction: column;
-
-        h3 {
-          color: $text-color;
-          margin-bottom: 1rem;
-        }
-
-        p {
-          color: $text-color-secondary;
-          margin-bottom: 1rem;
-          line-height: 1.3rem;
-        }
-      }
-    }
-  }
-
-  #html {
     svg {
-      color: #e44d26;
-    }
-  }
-
-  #css {
-    svg {
-      color: #1572b6;
-    }
-  }
-
-  #js {
-    svg {
-      color: #f0db4f;
-    }
-  }
-
-  #node {
-    svg {
-      color: #83cd29;
-    }
-  }
-
-  #mysql {
-    svg {
-      color: #00618a;
-    }
-  }
-
-  #react {
-    svg {
-      color: #61dafb;
+      font-size: 2.5rem;
     }
   }
 }
@@ -101,21 +36,152 @@
 .HomeContainerBtn {
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
 }
 
-.btn-expand {
-  @include btn;
+#html {
+  svg {
+    color: #e44d26;
+  }
+}
+
+#css {
+  svg {
+    color: #1572b6;
+  }
+}
+
+#js {
+  svg {
+    color: #f0db4f;
+  }
+}
+
+#node {
+  svg {
+    color: #83cd29;
+  }
+}
+
+#mysql {
+  svg {
+    color: #00618a;
+  }
+}
+
+#react {
+  svg {
+    color: #61dafb;
+  }
+}
+
+#postman {
+  svg {
+    color: #e44c00;
+  }
+}
+
+#figma {
+  svg {
+    color: #de7e4d;
+  }
+}
+
+#git {
+  svg {
+    color: #f57434;
+  }
+}
+
+#github {
+  svg {
+    color: #a9a9a9;
+  }
+}
+
+#insomia {
+  svg {
+    color: #362256;
+  }
+}
+
+#next {
+  svg {
+    color: #a5a5a5;
+  }
+}
+
+#jest {
+  svg {
+    color: #e06d15;
+  }
+}
+
+#sass {
+  svg {
+    color: #e015be;
+  }
+}
+
+#tailwind {
+  svg {
+    color: #161295;
+  }
+}
+
+#typescript {
+  svg {
+    color: #1610c6;
+  }
+}
+
+#bootstrap {
+  svg {
+    color: #120da3;
+  }
+}
+
+#netlify {
+  svg {
+    color: #099b60;
+  }
+}
+
+#mongo {
+  svg {
+    color: #016c37;
+  }
+}
+
+#wordpress {
+  svg {
+    color: #088fe9;
+  }
+}
+
+#sanity {
+  svg {
+    color: #520e28;
+  }
 }
 
 @media (max-width: 800px) {
-  .MainContentTitle {
-    width: 300px;
-  }
+  .MainContainer {
+    padding: 0;
 
-  .MainCardInfoTitle {
-    display: none;
-  }
-  .MainCardInfoAge {
-    display: none;
+    .MainContainerCard {
+      display: flex;
+      gap: 2rem;
+    }
+
+    .MainCard {
+      svg {
+        font-size: 2rem;
+      }
+    }
+
+    .HomeContainerBtn {
+      margin-bottom: 1rem;
+    }
   }
 }
