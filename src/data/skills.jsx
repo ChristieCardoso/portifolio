@@ -5,7 +5,6 @@ import { TbBrandNextjs } from "react-icons/tb";
 
 export const front = [
   { id: "react", icon: <DiReact /> },
-  { id: "next", icon: <TbBrandNextjs /> },
   { id: "sass", icon: <DiSass /> },
   { id: "tailwind", icon: <SiTailwindcss /> },
   { id: "bootstrap", icon: <SiBootstrap /> },
