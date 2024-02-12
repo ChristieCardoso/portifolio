@@ -6,8 +6,8 @@ export const NavBar = () => {
   return (
     <nav className="NavbarContainer">
       <Link to="/" className="NavLink">Home</Link>
-      <Link to="/project" className="NavLink">Projetos</Link>
-      <Link to="/about" className="NavLink">Sobre</Link>
+      <Link to="/project" className="NavLink">Projects</Link>
+      <Link to="/about" className="NavLink">About</Link>
     </nav>
   )
 }

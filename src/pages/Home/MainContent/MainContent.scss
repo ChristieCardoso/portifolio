@@ -2,34 +2,56 @@
 
 .MainContainer {
   flex: 2 1 0;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: $bg-color;
   border-radius: $container-border-radius;
+}
+
+.NameContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.MainText {
+  font-size: 2.5rem;
+  color: rgb(40, 45, 119);
+  margin-bottom: 1rem;
+}
+
+.MainSpan {
+  color: $text-color;
+}
+
+.MainTypewriter {
+  color: rgb(40, 45, 119);
+  font-size: 1.8rem;
 }
 
 .MainContentTitle {
   display: flex;
   justify-content: center;
-  color: $text-color;
-  font-size: 1.2rem;
-  margin: 1rem;
+  color: $text-color-secondary;
+  font-size: 1rem;
+  padding: 0.2rem;
 }
 
 .MainContainerCard {
   display: flex;
   flex-wrap: wrap;
-  padding: 1rem;
   justify-content: center;
   gap: 3rem;
+  margin: 1.2rem;
+}
 
-  .MainCard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.MainCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    svg {
-      font-size: 2.5rem;
-    }
+  svg {
+    font-size: 2.5rem;
   }
 }
 
@@ -159,6 +181,24 @@
   }
 }
 
+#solidity {
+  svg {
+    color: #5a5a5a;
+  }
+}
+
+#php {
+  svg {
+    color: #0a31ae;
+  }
+}
+
+#java {
+  svg {
+    color: #ae200a;
+  }
+}
+
 #sanity {
   svg {
     color: #520e28;
@@ -171,15 +211,20 @@
 
     .MainContainerCard {
       display: flex;
-      gap: 2rem;
+      gap: 1.5rem;
+    }
+
+    .MainText {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
     }
 
     .MainCard {
       svg {
-        font-size: 2rem;
+        font-size: 1.9rem;
       }
     }
-
     .HomeContainerBtn {
       margin-bottom: 1rem;
     }

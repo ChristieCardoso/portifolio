@@ -1,6 +1,6 @@
 import React from "react";
-import { DiHtml5, DiCss3, DiJsBadge, DiNodejsSmall, DiMysql, DiReact, DiSass } from "react-icons/di";
-import { SiPostman, SiFigma, SiGit, SiGithub, SiJest, SiTailwindcss, SiTypescript, SiBootstrap, SiNetlify, SiMongodb, SiSanity, SiWordpress } from "react-icons/si";
+import { DiHtml5, DiCss3, DiJsBadge, DiNodejsSmall, DiMysql, DiJava, DiReact, DiSass } from "react-icons/di";
+import { SiPostman, SiFigma, SiSolidity, SiPhp, SiGit, SiGithub, SiJest, SiTailwindcss, SiTypescript, SiBootstrap, SiNetlify, SiMongodb, SiSanity, SiWordpress } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 
 export const front = [
@@ -9,6 +9,8 @@ export const front = [
   { id: "sass", icon: <DiSass /> },
   { id: "tailwind", icon: <SiTailwindcss /> },
   { id: "bootstrap", icon: <SiBootstrap /> },
+  { id: "html", icon: <DiHtml5 /> },
+  { id: "css", icon: <DiCss3 /> },
 ];
 
 export const tools = [
@@ -31,6 +33,7 @@ export const back_db_cloud = [
 export const language = [
   { id: "js", icon: <DiJsBadge /> },
   { id: "typescript", icon: <SiTypescript /> },
-  { id: "html", icon: <DiHtml5 /> },
-  { id: "css", icon: <DiCss3 /> },
+  { id: "java", icon: <DiJava  /> },
+  { id: "php", icon: <SiPhp /> },
+  { id: "solidity", icon: <SiSolidity /> },
 ];

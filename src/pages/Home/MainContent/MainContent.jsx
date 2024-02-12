@@ -1,5 +1,6 @@
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { front, tools, back_db_cloud, language } from "../../../data/skills";
 
 import "./MainContent.scss";
@@ -31,8 +32,30 @@ export const MainContent = () => {
     { title: "Back-End, Database and Cloud", items: back_db_cloud },
     { title: "Tools", items: tools },
   ];
+
+  const [text] = useTypewriter({
+    words: ["Web Development", "Responsive Design", "CSS Frameworks", "UI/UX Design", "API Integration", "SWE Principles"],
+    loop: true,
+    typeSpeed: 20,
+    deleteSpeed: 20,
+    delaySpeed: 2500,
+  });
   return (
     <main className="MainContainer">
+      <div className="NameContainer">
+        <h1 className="MainText">
+          Hi, I'm <span className="MainSpan">Christie Cardoso</span>
+        </h1>
+
+        <h2 className="MainTypewriter">
+          <span>{text}</span>
+          <Cursor
+            cursorBlinking="false"
+            cursorStyle="|"
+            cursorColor="rgba(40, 45, 119)"
+          />
+        </h2>
+      </div>
       {sections.map(({ title, items }) => (
         <motion.div variants={container} initial="hidden" animate="visible" key={title}>
           <h2 className="MainContentTitle">{title}</h2>

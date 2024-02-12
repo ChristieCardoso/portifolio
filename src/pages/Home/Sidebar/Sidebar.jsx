@@ -17,12 +17,12 @@ export const Sidebar = () => {
           damping: 20
 
         }} />
-      <p className="SidebarTitle">Web Developer - JavaScript | React | CSS3 | HTML5 | MySql | PHP | WordPress | Git</p>
+      <p className="SidebarTitle">Front-End Developer </p>
       <section className="SidebarInfoContainer">
         <div className="SidebarInfoCard">
           <AiFillEnvironment id="pin-icon" />
           <div>
-            <p>BH, Minas Gerais / MG</p>
+            <p>Belo Horizonte / MG</p>
           </div>
         </div>
         <div className="SidebarInfoCard">
