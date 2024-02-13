@@ -1,71 +1,73 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-
-import Project from '../../../data/projects';
 import ProjectCard from './ProjectCard/ProjectCard';
+import projectsData from '../../../data/projects';
 
 import './FeaturedProjects.scss';
 
 export const FeaturedProjects = () => {
-  const [allProjects, setAllProjects] = useState([]); // Estado para armazenar todos os projetos
+
+  const [allProjects, setAllProjects] = useState([]);
   const [featuredProjects, setFeaturedProjects] = useState([]);
-  const [filter, setFilter] = useState('all'); // Estado para armazenar o filtro selecionado
-  const [searchQuery, setSearchQuery] = useState(''); // Estado para armazenar a consulta de pesquisa
+  const [filter, setFilter] = useState('landing-page');
+  const [searchQuery, setSearchQuery] = useState('');
 
   useEffect(() => {
-    setAllProjects(Project);
-    const filteredProjects = allProjects.filter(
-      (project) =>
-        (filter === 'all' || project.category === filter) &&
-        (searchQuery === '' ||
-          (project.technology && project.technology.toLowerCase().includes(searchQuery.toLowerCase()))
-        )
+    setAllProjects(projectsData);
+  }, []);
+
+  useEffect(() => {
+    const filteredProjects = allProjects.filter(project =>
+      (filter === 'all' || project.category === filter) &&
+      (searchQuery === '' ||
+        (project.technology && project.technology.toLowerCase().includes(searchQuery.toLowerCase()))
+      )
     );
     setFeaturedProjects(filteredProjects);
   }, [filter, allProjects, searchQuery]);
 
-  const handleFilterChange = (selectedFilter) => {
+  const handleFilterChange = selectedFilter => {
     setFilter(selectedFilter);
   };
 
-  const handleSearchChange = (event) => {
+  const handleSearchChange = event => {
     setSearchQuery(event.target.value);
   };
 
   return (
-    <div className='FeaturedProjectContainer'>
-      <h1 className='FeaturedProjectTitle'>
-        Projetos em Destaque
-      </h1>
-      <div className='searchContainer'>
+    <section className="featuredProjectContainer">
+      <h1 className="featuredProjectTitle">Projects</h1>
+      <section className="searchContainer">
         <input
           type="text"
-          placeholder="Pesquisar por tecnologia"
+          placeholder="Search by technology"
           value={searchQuery}
           onChange={handleSearchChange}
-          className='search'
+          className="search"
         />
 
-        <div className='btnFilter'>
-          <a onClick={() => handleFilterChange('all')}>Destaques</a>
-          <a onClick={() => handleFilterChange('landing-page')}>LandingPage</a>
-          <a onClick={() => handleFilterChange('estudo')}>Estudos</a>
-          <a onClick={() => handleFilterChange('api')}>Api</a>
-          <a onClick={() => handleFilterChange('dapp')}>Dapp</a>
+        <div className="btnFilter">
+          <button onClick={() => handleFilterChange('landing-page')}>Landing Page</button>
+          <button onClick={() => handleFilterChange('estudo')}>Study</button>
+          <button onClick={() => handleFilterChange('api')}>API</button>
+          <button onClick={() => handleFilterChange('dapp')}>Dapp</button>
+          <button onClick={() => handleFilterChange('all')}>All</button>
         </div>
-      </div>
+      </section>
 
-      <motion.section className='FeaturedProject'>
-        {featuredProjects.map((project) => (
-          <motion.div key={project.id} whileHover={{ rotate: 3 }}>
+      <section className="featuredProject">
+        {featuredProjects.map(project => (
+          <div key={project.id}>
             <ProjectCard {...project} />
-          </motion.div>
+          </div>
         ))}
-      </motion.section>
-      <Link to="/project" className="btn-expand">
-        Veja Mais
-      </Link>
-    </div>
+      </section>
+
+      <section className='featuredProjectBtn'>
+        <Link to="/project" className="btn-expand">
+          See More
+        </Link>
+      </section>
+    </section>
   );
 };

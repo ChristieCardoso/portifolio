@@ -13,7 +13,7 @@ import './WorkExperience.scss';
 export const WorkExperience = () => {
   return (
     <div className='WorkExperienceContainer'>
-      <h1 className='ProfessionalExperienceTitle'>Experiência</h1>
+      <h1 className='ProfessionalExperienceTitle'>Experience</h1>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"

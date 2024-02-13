@@ -1,76 +1,79 @@
 @import "../../../../styles/mixins.scss";
 @import "../../../../styles/variables.scss";
 
-.FeaturedProjectCardContainer {
-  display: flex;
-  width: 32%;
-  min-width: 20rem;
-  justify-content: center;
-  align-items: center;
-  padding: 3.125rem 0.9rem;
-}
-
-.FeaturedProjectCard {
-  display: flex;
-  height: 100%;
-  padding: 1.25rem;
-  align-items: center;
-  flex-wrap: wrap;
+.card {
+  position: relative;
   width: 300px;
-  line-height: 1.5;
-  border: none;
-  border-radius: 0.5rem;
-  transition: all 0.5s ease 0s;
-  box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
-
-  &:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
-  }
+  height: 330px;
+  border-radius: 15px;
+  overflow: hidden;
 }
 
-.FeaturedProjectCardBody {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  padding: 1rem;
+.cardImg {
   width: 100%;
-
-  .FeaturedProjectCardTitle {
-    margin-bottom: 0.75rem;
-    font-size: 1.55rem;
-    text-align: center;
-    color: $text-color;
-  }
-
-  .FeaturedProjectDescription {
-    margin-bottom: 2rem;
-    color: $text-color-secondary;
-    font-style: italic;
-  }
-
-  .FeaturedProjectBtnContainer {
-    display: flex;
-    gap: 4rem;
-  }
-
-  .projectBtn {
-    @include btn-project;
-    color: $text-color;
-  }
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
 }
 
-@media (max-width: 800px) {
-  .FeaturedProjectCardTitle {
-    font-size: 1.7rem;
-  }
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  background: #00000038;
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  color: #fff;
+  padding: 30px;
+  transition: 1.4s;
+}
 
-  .FeaturedProjectDescription {
-    font-size: 1.3rem;
-    font-style: italic;
-    white-space: nowrap;
-    overflow: hidden;
-    width: 100%;
-    text-overflow: ellipsis;
-  }
+.card:hover .cardBody {
+  right: 0;
+}
+
+.cardTitle {
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.cardDescription {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: 17px;
+  line-height: 20px;
+  font-style: italic;
+  margin: auto;
+}
+
+.cardTechnology {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cardContainerBtn {
+  position: absolute;
+  bottom: 0;
+  margin-top: 20px;
+  left: -50px;
+  right: -50px;
+}
+
+.projectBtn {
+  color: rgb(40, 45, 119);
+  font-size: 25px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.projectBtn:hover {
+  font-size: 32px;
 }

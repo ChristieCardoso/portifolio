@@ -1,61 +1,60 @@
 @import "../../../styles/variables.scss";
 @import "../../../styles/mixins";
 
-.FeaturedProjectContainer {
+.featuredProjectContainer {
+  width: 100%;
   background-color: $bg-color;
   border-radius: $container-border-radius;
-  width: 100%;
-  text-align: center;
-  position: relative;
-  padding: 3rem 0;
-}
-.searchContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  .search {   
-    border-radius: 0.5rem;
-    border: 0px solid grey;
-    padding: 0.5rem 1rem;    
-  }
+  padding: 2rem;
 }
 
-.btnFilter {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  a {
-    color: $text-color-secondary;
-    box-shadow: 0 2px 5px 3px rgba(119, 53, 136, 0.459);
-    padding: 0.8rem 1.2rem;
-    border-radius: 1rem;
-    cursor: pointer;
-  }
-}
-
-.FeaturedProject {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-bottom: 10px;
-  gap: 2rem;
-}
-
-.FeaturedProjectTitle {
-  width: 100%;
+.featuredProjectTitle {
+  @include center;
   color: $text-color;
   font-size: 2.2rem;
-  margin-bottom: 1.3rem;
-  @include center;
-  justify-content: center;
   gap: 1rem;
+  margin-bottom: 2rem;
 
   &:after {
     @include gradient-border;
   }
+}
+
+.searchContainer {
+  @include center;
+  margin-bottom: 3rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.search {
+  border-radius: 0.5rem;
+  padding: 0.7rem 1rem;
+}
+
+.btnFilter {
+  @include center;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  button {
+    padding: 0.6rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+  }
+}
+
+.featuredProject {
+  @include center;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+  gap: 3rem;
+}
+
+.featuredProjectBtn {
+  @include center;
+  margin-top: 3rem;
 }
 
 @media (max-width: 800px) {

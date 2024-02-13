@@ -3,11 +3,11 @@ const data = [
     id: '1',
     title: 'Estofados 10/10',
     category: 'landing-page',
-    technology: 'nextjs, tailwind',
+    technology: 'Nextjs, Tailwind',
     description:
       'Landing Page desenvolvida com Next.js, Tailwind CSS e ESLint oferece uma interface amigável e responsiva, permitindo que os usuários solicitem e agendem serviços de limpeza de estofados de forma conveniente.',
     image: {
-      src: 'https://res.cloudinary.com/dmvm1mlgv/image/upload/f_auto,q_auto/v1/Portifolio%20React/vs1r5givj7eyzdzint1l.png',
+      src: 'https://res.cloudinary.com/dmvm1mlgv/image/upload/v1707863088/Portifolio%20React/q6zajggluck9aovm2hg7.png',
     },
     links: {
       site: 'https://estofados1010.vercel.app/',
@@ -18,11 +18,11 @@ const data = [
     id: '2',
     title: 'Minas na mesa',
     category: 'landing-page',
-    technology: 'react, css',
+    technology: 'React, Css',
     description:
       'Landing Page de evento gastronômico desenvolvido com React e CSS, A interface foi projetada para ser fácil e acessível, permitindo que os usuários naveguem pelas informações do festival com facilidade.',
     image: {
-      src: 'https://res.cloudinary.com/dmvm1mlgv/image/upload/f_auto,q_auto/v1/Portifolio%20React/tguzhthgtgfr4tetsmuv.png',
+      src: 'https://res.cloudinary.com/dmvm1mlgv/image/upload/v1707863424/Portifolio%20React/isidhpgth6lufgod01cx.png',
     },
     links: {
       site: 'https://minas-na-mesa.vercel.app/',
@@ -33,7 +33,7 @@ const data = [
     id: '3',
     title: 'Nlw - SpaceTime',
     category: 'estudo',
-    technology: 'nextjs, tailwind, typescript, axios',
+    technology: 'Nextjs, Tailwind, TypeScript, Axios',
     description:
       'Projeto do evento NLW da Rocketseat permite upload de imagens com data e descrição, além de sistema de login integrado ao GitHub com Next.js, TypeScript, Axios, Tailwind CSS, JWT, Js-cookie e ESLint.',
     image: {
@@ -47,11 +47,11 @@ const data = [
     id: '4',
     title: 'Movie - Lib',
     category: 'api',
-    technology: 'react, css',
+    technology: 'React, Css',
     description:
       'Projeto com React, consumindo a API do TMDB (filmes), utilizando hooks e React Router, criado com Vite.',
     image: {
-      src: 'https://res.cloudinary.com/dmvm1mlgv/image/upload/f_auto,q_auto/v1/Portifolio%20React/qjlvgca7fmjclcwtqj6z',
+      src: 'https://res.cloudinary.com/dmvm1mlgv/image/upload/v1707863872/Portifolio%20React/amynpwv4a7w0kuvr4ur7.png',
     },
     links: {
       site: 'https://movie-lib-omega.vercel.app/',
@@ -62,11 +62,11 @@ const data = [
     id: '5',
     title: 'Bem Jequi',
     category: 'landing-page',
-    technology: 'react, sass',
+    technology: 'React, Sass',
     description:
       'Projeto de landing page, relacionado ao meu negócio de laticínios, feita com react, react-router-dom, Sass',
     image: {
-      src: 'https://res.cloudinary.com/dmvm1mlgv/image/upload/f_auto,q_auto/v1/Portifolio%20React/mzoub2vfvfkmc0nviaoy',
+      src: 'https://res.cloudinary.com/dmvm1mlgv/image/upload/v1707863591/Portifolio%20React/y7qkgiskxpilezjwjov2.png',
     },
     links: {
       site: 'https://bemjequiv2.netlify.app/',
@@ -77,7 +77,7 @@ const data = [
     id: '6',
     title: 'Lottery',
     category: 'dapp',
-    technology: 'nextjs, tailwindcss',
+    technology: 'Nextjs, Tailwindcss',
     description:
       'Projeto de loteria descentralizada usando Next.js, Tailwind CSS e Solidity.',
     image: {
@@ -86,6 +86,36 @@ const data = [
     links: {
       site: 'https://lottery-dapp-v3.vercel.app/',
       repo: 'https://github.com/ChristieCardoso/lottery-dapp-v3',
+    },
+  },
+  {
+    id: '7',
+    title: 'Redireciona Shop',
+    category: 'estudo',
+    technology: 'Nextjs, Tailwindcss, TypeScript, Sanity',
+    description:
+      'Este é um site de comércio eletrônico completo construído para fins de aprendizagem de tecnologias de ponta.',
+    image: {
+      src: 'https://res.cloudinary.com/dmvm1mlgv/image/upload/v1707864334/Portifolio%20React/f1hgsgoualbvweevwnia.png',
+    },
+    links: {
+      site: 'https://redireciona-shop.vercel.app/',
+      repo: 'https://github.com/ChristieCardoso/RedirectShop',
+    },
+  },
+  {
+    id: '8',
+    title: 'NFT-gated-website ',
+    category: 'dapp',
+    technology: 'Nextjs, TypeScript, Ethers, Thirdweb',
+    description:
+      'Este projeto utiliza autenticação baseada em NFTs para controlar o acesso à página. A autenticação por NFTs oferece segurança adicional, garantindo que apenas os proprietários dos NFTs específicos possam acessar o conteúdo exclusivo deste site.',
+    image: {
+      src: 'https://res.cloudinary.com/dmvm1mlgv/image/upload/v1707864437/Portifolio%20React/dzyxpyyuchzpmp8ahbqq.png',
+    },
+    links: {
+      site: 'https://nft-gated-website-beta.vercel.app/',
+      repo: 'https://github.com/ChristieCardoso/NFT-gated-website',
     },
   },
 ];
