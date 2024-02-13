@@ -2,63 +2,65 @@
 
 .aboutContainer {
   width: 100%;
-  padding: 1rem 3rem 3rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
 }
 
-.about {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-left: 0.2rem;
-  font-size: 1rem;
-  margin-bottom: 2rem;
+.aboutTextContainer {
+  width: 90%;
+  color: $text-color;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  flex-direction: column;
 
-  .aboutImg {
-    width: 40%;
-    min-width: 320px;
-    padding: 1rem;
-    margin-bottom: 5rem;
+  p {
+    text-align: center;
+    font-size: 1.6rem;
+  }
 
-    img {
-      width: 100%;
+  span {
+    color: $about-title-purple;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      list-style: none;
+    }
+
+    .aboutTileHobby {
+      margin-bottom: 1rem;
+      padding-left: 1.55rem;
+    }
+
+    .aboutIcon {
+      color: $text-color-secondary;
     }
   }
 }
 
-.aboutTechSckillsContainer {
-  margin-top: 4rem;
-
-  .skills {
-    display: flex;
-    justify-content: center;
-    color: $about-title-purple;
-    font-size: 2.2rem;
-    padding-bottom: 3rem;
-  }
+.aboutStats {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .aboutGithubContainer {
   flex-direction: column;
   margin-top: 6rem;
-
-  .githubActivity {
-    display: flex;
-    justify-content: center;
-    color: $about-title-purple;
-    font-size: 2.2rem;
-    padding-bottom: 3rem;
-  }
 }
 
 @media (max-width: 800px) {
-  .about {
-    flex-wrap: wrap;
-  }
-
-  .aboutContainer {
-    padding: 0;
-  }
-
   .aboutGithubContainer {
     display: none;
   }
