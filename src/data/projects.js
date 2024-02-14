@@ -5,7 +5,7 @@ const data = [
     category: 'landing-page',
     technology: 'Nextjs, Tailwind',
     description:
-      'Landing Page desenvolvida com Next.js, Tailwind CSS e ESLint oferece uma interface amigável e responsiva, permitindo que os usuários solicitem e agendem serviços de limpeza de estofados de forma conveniente.',
+      'Landing Page que oferece uma experiência intuitiva e eficaz, permitindo que os usuários solicitem e agendem serviços de limpeza.',
     image: {
       src: 'https://res.cloudinary.com/dmvm1mlgv/image/upload/v1707863088/Portifolio%20React/q6zajggluck9aovm2hg7.png',
     },
@@ -20,7 +20,7 @@ const data = [
     category: 'landing-page',
     technology: 'React, Css',
     description:
-      'Landing Page de evento gastronômico desenvolvido com React e CSS, A interface foi projetada para ser fácil e acessível, permitindo que os usuários naveguem pelas informações do festival com facilidade.',
+      'Landing Page de evento gastronômico, a interface proporciona uma experiência amigável, permitindo aos usuários explorar o festival.',
     image: {
       src: 'https://res.cloudinary.com/dmvm1mlgv/image/upload/v1707863424/Portifolio%20React/isidhpgth6lufgod01cx.png',
     },
@@ -35,7 +35,7 @@ const data = [
     category: 'estudo',
     technology: 'Nextjs, Tailwind, TypeScript, Axios',
     description:
-      'Projeto do evento NLW da Rocketseat permite upload de imagens com data e descrição, além de sistema de login integrado ao GitHub com Next.js, TypeScript, Axios, Tailwind CSS, JWT, Js-cookie e ESLint.',
+      'Desenvolvido durante o NLW da Rocketseat, o projeto permite o compartilhamento de fotos com informações detalhadas e data.',
     image: {
       src: 'https://res.cloudinary.com/dmvm1mlgv/image/upload/f_auto,q_auto/v1/Portifolio%20React/wexox2bldu9vz1yz4dj1.jpg',
     },
@@ -49,7 +49,7 @@ const data = [
     category: 'api',
     technology: 'React, Css',
     description:
-      'Projeto com React, consumindo a API do TMDB (filmes), utilizando hooks e React Router, criado com Vite.',
+      'Projeto de streaming de filmes em React, conectado via API do TMDB, foi um projeto de estudo do canal Matheus Battisti.',
     image: {
       src: 'https://res.cloudinary.com/dmvm1mlgv/image/upload/v1707863872/Portifolio%20React/amynpwv4a7w0kuvr4ur7.png',
     },
@@ -64,7 +64,7 @@ const data = [
     category: 'landing-page',
     technology: 'React, Sass',
     description:
-      'Projeto de landing page, relacionado ao meu negócio de laticínios, feita com react, react-router-dom, Sass',
+      'Projeto de landing page, relacionado ao meu negócio de laticínios, desenvolvida com atenção ao cliente, design intuitivo e estilo personalizado.',
     image: {
       src: 'https://res.cloudinary.com/dmvm1mlgv/image/upload/v1707863591/Portifolio%20React/y7qkgiskxpilezjwjov2.png',
     },
@@ -79,7 +79,7 @@ const data = [
     category: 'dapp',
     technology: 'Nextjs, Tailwindcss',
     description:
-      'Projeto de loteria descentralizada usando Next.js, Tailwind CSS e Solidity.',
+      'Projeto de loteria descentralizada: compra de bilhetes, sorteios, reembolsos e retirada automática de ganhos para os usuários.',
     image: {
       src: 'https://res.cloudinary.com/dmvm1mlgv/image/upload/f_auto,q_auto/v1/Portifolio%20React/joisub0dtcrdzmaylaam',
     },
@@ -94,7 +94,7 @@ const data = [
     category: 'estudo',
     technology: 'Nextjs, Tailwindcss, TypeScript, Sanity',
     description:
-      'Este é um site de comércio eletrônico completo construído para fins de aprendizagem de tecnologias de ponta.',
+      'Um site de comércio eletrônico completo, desenvolvido para explorar e aprender tecnologias, incluindo o CMS Sanity.',
     image: {
       src: 'https://res.cloudinary.com/dmvm1mlgv/image/upload/v1707864334/Portifolio%20React/f1hgsgoualbvweevwnia.png',
     },
@@ -109,7 +109,7 @@ const data = [
     category: 'dapp',
     technology: 'Nextjs, TypeScript, Ethers, Thirdweb',
     description:
-      'Este projeto utiliza autenticação baseada em NFTs para controlar o acesso à página. A autenticação por NFTs oferece segurança adicional, garantindo que apenas os proprietários dos NFTs específicos possam acessar o conteúdo exclusivo deste site.',
+      'Projeto com autenticação por NFTs controla acesso à página, garantindo segurança para proprietários de NFTs específicos.',
     image: {
       src: 'https://res.cloudinary.com/dmvm1mlgv/image/upload/v1707864437/Portifolio%20React/dzyxpyyuchzpmp8ahbqq.png',
     },

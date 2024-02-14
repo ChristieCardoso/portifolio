@@ -36,7 +36,7 @@ export const FeaturedProjects = () => {
 
   return (
     <section className="featuredProjectContainer">
-      <h1 className="featuredProjectTitle">Projects</h1>
+      <h1 className="featuredProjectTitle">Projetos</h1>
       <section className="searchContainer">
         <input
           type="text"
@@ -48,10 +48,9 @@ export const FeaturedProjects = () => {
 
         <div className="btnFilter">
           <button onClick={() => handleFilterChange('landing-page')}>Landing Page</button>
-          <button onClick={() => handleFilterChange('estudo')}>Study</button>
+          <button onClick={() => handleFilterChange('estudo')}>Estudos</button>
           <button onClick={() => handleFilterChange('api')}>API</button>
           <button onClick={() => handleFilterChange('dapp')}>Dapp</button>
-          <button onClick={() => handleFilterChange('all')}>All</button>
         </div>
       </section>
 
@@ -65,7 +64,7 @@ export const FeaturedProjects = () => {
 
       <section className='featuredProjectBtn'>
         <Link to="/project" className="btn-expand">
-          See More
+          Ver Mais
         </Link>
       </section>
     </section>

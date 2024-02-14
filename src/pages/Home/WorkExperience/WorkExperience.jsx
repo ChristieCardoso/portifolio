@@ -13,7 +13,7 @@ import './WorkExperience.scss';
 export const WorkExperience = () => {
   return (
     <div className='WorkExperienceContainer'>
-      <h1 className='ProfessionalExperienceTitle'>Experience</h1>
+      <h1 className='ProfessionalExperienceTitle'>Experiências</h1>
       <VerticalTimeline>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -38,7 +38,7 @@ export const WorkExperience = () => {
         >
 
           <h3 className="vertical-timeline-element-title">
-            Desenvolvedor WordPress | Domyni
+            Estagiário de Desenvolvimento Web | Domyni
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
             set 2023 - fev 2024
@@ -57,7 +57,7 @@ export const WorkExperience = () => {
           icon={<MdOutlineWork />}
         >
           <h3 className="vertical-timeline-element-title">
-            Tec Manutenção | Rheoli
+            Estagiário de TI | Rheoli
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
             mai 2023 - ago 2023

@@ -2,34 +2,29 @@
 @import "../../styles/variables";
 
 .projectContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+  @include center;
   flex-direction: column;
-  
-  .ProjectTitle {
-    width: 100%;
-    color: $text-color;
-    font-size: 2.2rem;
-    margin-bottom: 1.3rem;
-    @include center;
-
-  }
-
-  h3 {
-    color: $text-color-secondary;
-    text-align: center;
-    max-width: 40rem;
-    margin: 1.5rem auto;
-    font-size: 1.3rem;
-    font-style: italic;
-  }
 }
 
-.projects {
-  display: flex;
-  justify-content: center;
+.projectCardTitle {
+  @include center;
+  width: 100%;
+  color: $text-color;
+  font-size: 2.2rem;
+  margin-bottom: 1.3rem;
+}
+
+.projectCardSubTitle {
+  color: $text-color-secondary;
+  text-align: center;
+  max-width: 40rem;
+  margin: 1.5rem auto;
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.projectsBody {
+  @include center;
   flex-wrap: wrap;
   padding-bottom: 10px;
 }

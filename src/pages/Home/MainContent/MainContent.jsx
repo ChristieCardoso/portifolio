@@ -70,7 +70,7 @@ export const MainContent = () => {
       ))}
       <div className="HomeContainerBtn">
         <Link to="/about" className="btn-expand">
-          See More
+          Ver Mais
         </Link>
       </div>
     </main>
