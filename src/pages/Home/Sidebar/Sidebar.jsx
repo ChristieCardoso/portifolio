@@ -1,22 +1,14 @@
-import { motion } from 'framer-motion';
 import { AiOutlineMail, AiFillEnvironment, AiFillLinkedin } from "react-icons/ai";
 import { BottonCurriculo } from "../../../components/Botton/BottonCurriculo";
-import Avatar from "../../../img/chs.png";
+import Avatar from "../../../../public/img/chs.png";
 
 import "./Sidebar.scss";
 
 export const Sidebar = () => {
   return (
     <aside className="SidebarContainer">
-      <motion.img src={Avatar} alt="Chs" initial={{ scale: 0 }}
-        animate={{ rotate: 360, scale: 1 }}
-        transition={{
-          type: "spring",
-          mass: 4.5,
-          stiffness: 260,
-          damping: 20
-
-        }} />
+      <img src={Avatar} alt="Imagem de Christie"
+      />
       <p className="SidebarTitle">Front-End Developer </p>
       <section className="SidebarInfoContainer">
         <div className="SidebarInfoCard">
