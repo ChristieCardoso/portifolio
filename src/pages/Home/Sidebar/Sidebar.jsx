@@ -1,6 +1,6 @@
 import { AiOutlineMail, AiFillEnvironment, AiFillLinkedin } from "react-icons/ai";
 import { BottonCurriculo } from "../../../components/Botton/BottonCurriculo";
-import Avatar from "../../../../public/img/chs.png";
+import Avatar from "../../../img/chs.png";
 
 import "./Sidebar.scss";
 
